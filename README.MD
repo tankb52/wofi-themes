@@ -13,7 +13,7 @@ Copy the style.css file to your Wofi directory ``~/.config/wofi/style.css``and r
 
 or execute the following command in the terminal
 ```shell
-wofi --style  <styles.css>
+wofi --style  /path/styles.css
 ```
 
 
