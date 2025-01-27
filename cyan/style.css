@@ -43,7 +43,7 @@ window {
 }
 
 #text {
-    color: #C6D0F5;
+    color: white;
     margin: 5px;
     border: 0px solid cyan;
 }
@@ -57,6 +57,20 @@ window {
     border-radius: 9px;
     border: 1px solid cyan;
     background-color: rgba(0,255,255,0.5);
+}
+
+#entry:selected #text {
+    font-weight: bold;
+    /*color: #8ed8fa;*/
+}
+
+#entry.activatable #text {
+      color: #5aa05a;
+  }
+
+#entry > * {
+  font-weight: bold;
+  color: cyan;
 }
 
 #expander-box {
