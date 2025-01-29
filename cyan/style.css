@@ -1,11 +1,11 @@
 * {
     font-family: Hack Nerd Font;
-    font-size: 20px;
     border: none;
 }
     
 window {
     margin: 0px;
+    font-size: 20px;
     border-radius: 5px;
     border: 2px solid cyan;
     background-color: rgba(26,30,36,0.4);
@@ -14,13 +14,13 @@ window {
 #input {
     margin: 5px;
     border-radius: 16px;
-    border: 2px solid rgba(26,30,36,0.2);
+    border: 2px outset rgba(0,255,255,0.3);
     background-color: rgba(0,255,255,0.3);
     color: white;
 }
 
 #input:focus {
-      box-shadow: rgba(0,255,255,0.4) 0px 0px 0px 2px, rgba(0,255,255, 0.65) 0px 4px 6px -1px, rgba(0,255,255, 0.08) 0px 1px 0px inset;
+      box-shadow: rgba(0,255,255,0.4) 0px 0px 10px 2px, rgba(0,255,255, 0.65) 0px 4px 6px -1px, rgba(0,255,255, 0.08) 0px 1px 0px inset;
   }
 
 
@@ -43,7 +43,7 @@ window {
 }
 
 #text {
-    color: white;
+    color: #e8f8f5;
     margin: 5px;
     border: 0px solid cyan;
 }
@@ -57,6 +57,7 @@ window {
     border-radius: 9px;
     border: 1px solid cyan;
     background-color: rgba(0,255,255,0.5);
+    box-shadow: rgba(0,255,255,0.4) 0px 0px 10px 1px, rgba(0,255,255, 0.65) 0px 4px 6px 1px, rgba(0,255,255, 0.08) 0px 1px 0px 2px;
 }
 
 #entry:selected #text {
