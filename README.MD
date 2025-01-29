@@ -1,13 +1,5 @@
 # Custom styles for wofi 
 
-## 1. cyan  
-
-Screenshot 
-
-![wofi with cyan style](./cyan/cyan.png)
-
-
---------------------
 ## Usage
 
 复制 ``style.css`` 文件至你的 wofi 目录 ``~/.config/wofi/style.css`` ，运行``wofi``即可查看主题效果。  
@@ -20,5 +12,11 @@ or execute the following command in the terminal
 ```shell
 wofi --style  /path/styles.css
 ```
+--------------------
 
+## 1. cyan  
+
+Screenshot 
+
+![wofi with cyan style](./cyan/cyan.png)
 

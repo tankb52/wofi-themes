@@ -1,5 +1,5 @@
 * {
-    font-family: Hack Nerd Font;
+    font-family: DejaVu Sans Mono; 
     /*font-size: 20px;            [>v1.4.1,字体写在此处窗口随机偏移<]*/
     border: none;
 }
@@ -10,7 +10,7 @@ window {
     font-size: 20px;            /*v1.4.1,字体写在此处保证每次窗口都居中*/
     border-radius: 5px;
     border: 2px solid cyan;
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0.3);
 }
 
 /*搜索框*/
@@ -56,6 +56,13 @@ window {
     color: #e8f8f5;
     margin: 5px;
     border: 0px solid cyan;
+}
+
+/*图标*/
+#entry image {
+    padding-right: 3px;
+    /*border: 2px solid cyan;*/
+    background-color: transparent;
 }
 
 /*列表中第二种颜色，与window中的底色叠加*/
