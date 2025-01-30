@@ -18,7 +18,7 @@ window {
     margin: 8px;
     border-radius: 24px;
     border: 2px solid rgba(255,96,255,1); 
-    background-color: rgba(0,0,0,1);
+    background-color: rgba(0,0,0,0.1);
     /*background-color: rgba(255,96,255,0.5); */
     font-size: 28px;
     font-weight: normal;
@@ -27,7 +27,10 @@ window {
 
 /*聚集在搜索框时的特效*/
 #input:focus {
-      box-shadow: rgba(255,96,255,0.4) 0px 0px 10px 2px, rgba(255,96,255, 0.65) 0px 4px 6px -1px, rgba(255,96,255, 0.08) 0px 1px 0px inset;
+      box-shadow: 
+      rgba(255,96,255,0.4) 0px 0px 10px 2px, 
+      rgba(255,96,255, 0.65) 0px 8px 6px -1px, 
+      rgba(255,96,255, 0.8) 0px 1px 0px inset;
   }
 
 
@@ -75,8 +78,8 @@ window {
 #entry:selected {
     margin: 0px;
     border-radius: 24px;
-    border: 1px solid transparent;
-    background-color: rgba(128,255,128,0.5);
+    border: 2px solid rgba(128,255,128,0.8);
+    background-color: transparent;
 }
 
 /*选中条目的字体设置*/
@@ -120,7 +123,7 @@ window {
 
     /*子项目的选中项*/
     #entry.activatable:selected {
-        /*border: 1px dashed rgba(0,128,0,1);*/
+        border: 3px dotted rgba(128,255,128,1);
         background-color: rgba(0,0,0,0.6);
     }
 
