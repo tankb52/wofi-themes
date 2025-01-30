@@ -2,15 +2,15 @@
 
 ## Usage
 
-复制 ``style.css`` 文件至你的 wofi 目录 ``~/.config/wofi/style.css`` ，运行``wofi``即可查看主题效果。  
+复制 ``css`` 文件至你的 wofi 目录并重命名为``~/.config/wofi/style.css`` ，运行``wofi``即可查看主题效果。  
 或者在终端中执行以下命令
 
-Copy the ``style.css ``file to your Wofi directory ``~/.config/wofi/style.css``and run ``wofi`` to test the effects.  
+Copy the ``css ``file to your Wofi directory and rename it to ``~/.config/wofi/style.css``, then run ``wofi`` to test the effects.  
 
 or execute the following command in the terminal
 
 ```shell
-wofi --style  /path/styles.css
+wofi --style  /path/<name>.css
 ```
 
 #### 2025蛇年特别奉献  
@@ -27,19 +27,17 @@ prompt=🐍²⁰²⁵拜年啦🧨🐍年大吉🐍来运转✨金🐍献瑞🌟
 
 ## 1. cyan  
 
-Screenshot 
-
 ![wofi with cyan style](./cyan/cyan.png)
 
 ## 2. BGPY2025
-
-Screenshot
 
 ![](./BGPY2025/BGPY2025.png)
 
 ## 3. HappyChineseNewYear!!
 
 🐍²⁰²⁵拜年啦🧨🌟金🐍献瑞✨🐍年大吉͎༓🧣蛇来运转✨🧧大吉大利💰财源滚滚✨福满人间🌟
+
+需要将目录中的背景图片一并放在`~/.config/wofi/`目录中。
 
 ![](./HappyChineseNewYear/screenshot.png)
 
