@@ -123,7 +123,7 @@ window {
 
     /*子项目的选中项*/
     #entry.activatable:selected {
-        border: 3px dotted rgba(128,255,128,1);
+        border: 3px dashed rgba(128,255,128,1);
         background-color: rgba(0,0,0,0.3);
     }
 
