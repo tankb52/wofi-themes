@@ -124,7 +124,7 @@ window {
     /*子项目的选中项*/
     #entry.activatable:selected {
         border: 3px dotted rgba(128,255,128,1);
-        background-color: rgba(0,0,0,0.6);
+        background-color: rgba(0,0,0,0.3);
     }
 
     /*子项目选中项的字体颜色*/
