@@ -1,0 +1,140 @@
+* {
+    font-family: DejaVu Sans Mono; 
+    /*font-size: 20px;            [>v1.4.1,字体写在此处窗口随机偏移<]*/
+    border: none;
+}
+
+/*全局窗口*/
+window {
+    margin: 0px;
+    font-size: 20px;            /*v1.4.1,字体写在此处保证每次窗口都居中*/
+    border-radius: 9px;
+    border: 2px solid rgba(0,0,0,0);
+    background-color: rgba(0,0,0,0.8);
+}
+
+/*搜索框*/
+#input {
+    margin: 8px;
+    border-radius: 24px;
+    border: 2px solid rgba(255,96,255,1); 
+    background-color: rgba(0,0,0,1);
+    /*background-color: rgba(255,96,255,0.5); */
+    font-size: 28px;
+    font-weight: normal;
+    color: rgb(255,255,96);
+}
+
+/*聚集在搜索框时的特效*/
+#input:focus {
+      box-shadow: rgba(255,96,255,0.4) 0px 0px 10px 2px, rgba(255,96,255, 0.65) 0px 4px 6px -1px, rgba(255,96,255, 0.08) 0px 1px 0px inset;
+  }
+
+
+/*列表*/
+#inner-box {
+    margin: 5px;
+    border: 2px solid rgba(0,0,0,0);
+    background-color: rgba(0,0,0,0);
+}
+
+/*背景*/
+#outer-box {
+    margin: 0px;
+    border: 3px solid rgba(0,0,0,0);
+    background-color: rgba(0,0,0,0);
+}
+
+/*列表边框*/
+#scroll {
+    margin: 1px;
+    border: 2px solid rgba(0,0,0,0);
+    background-color: rgba(0,0,0,0);
+}
+
+/*列表中的字体*/
+#text {
+    color: rgba(255,255,96,1);
+    margin: 5px;
+}
+
+/*图标*/
+#entry image {
+    padding-right: 3px;
+    /*border: 2px solid cyan;*/
+    background-color: transparent;
+}
+
+/*列表中第二种颜色，与window中的底色叠加*/
+*#entry:nth-child(even){
+    /*border: 1px solid rgba(15,21,70,0.8);*/
+    background-color: rgba(0,0,0,0.1);
+}
+
+/*选中的条目*/
+#entry:selected {
+    margin: 0px;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    background-color: rgba(128,255,128,0.5);
+}
+
+/*选中条目的字体设置*/
+#text:selected {
+    margin: 5px;
+    color: rgba(128,255,128,1);
+    font-size: 22px;
+    font-weight: bold;
+    /*border: 3px solid yellow;*/
+    /*background-color: blue;*/
+}
+
+    /*条目的子项目*/
+    #entry.activatable {
+        /*border: 2px solid yellow;*/
+        margin: 2px;
+        border-radius: 6px;
+        background-color: rgba(0,0,0,0.1);
+        /*border-bottom-width: 1px; */
+        /*border-bottom-color: cyan; */
+        /*border-bottom-style: solid; */
+        /*border-top-width: 1px; */
+        /*border-top-color: cyan; */
+        /*border-top-style: solid; */
+    }
+
+    /*子项目字体颜色*/
+    #entry.activatable #text {
+        color: rgba(128,255,128,1);
+        font-size: 20px;
+        font-weight: normal;
+        font-style: italic;
+    }
+
+    /*子项目的选中项*/
+    #entry.activatable:selected {
+        /*border: 1px dashed rgba(0,128,0,1);*/
+        background-color: rgba(0,0,0,0.6);
+    }
+
+    /*子项目选中项的字体颜色*/
+    #entry.activatable:selected #text {
+        font-size: 22px;
+        font-style: normal;
+        font-weight: bold;
+        color: rgb(255,255,96);
+    }
+
+    /*子项目的>展开符号*/
+    #entry > * {
+        font-weight: bold;
+        color: #80ff80;
+    }
+
+    /*子条目的背景*/
+    #expander-box {
+        margin: 2px;
+        border-radius: 6px;
+        background-color: rgba(26,30,36,0.01);
+    }
+
