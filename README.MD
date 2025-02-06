@@ -48,3 +48,6 @@ prompt=🐍²⁰²⁵拜年啦🧨🐍年大吉🐍来运转✨金🐍献瑞🌟
 
 ![](./rainbow/rainbow.png)
 
+Webp animation
+
+![](./rainbow/rainbow.webp)
