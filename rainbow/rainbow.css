@@ -1,0 +1,184 @@
+* {
+    font-family: DejaVu Sans Mono; 
+    /*font-size: 20px;            [>v1.4.1,字体写在此处窗口随机偏移<]*/
+    border: none;
+}
+
+/*全局窗口*/
+window {
+    margin: 0px;
+    font-size: 20px;            /*v1.4.1,字体写在此处保证每次窗口都居中*/
+    border-radius: 5px;
+    border: 2px solid white;
+    /*background-color: rgba(0,0,0,0.3);*/
+    background-color: rgba(255,255,255,0.7);
+}
+
+/*搜索框*/
+#input {
+    margin: 8px;
+    border-radius: 24px;
+    border: 2px outset rgba(255,255,255,0.1);
+    background-color: rgba(255,255,255,0.3);
+    font-size: 18px;
+    font-weight: normal;
+    color: rgba(0,0,0,0.8);
+}
+
+/*聚集在搜索框时的特效*/
+#input:focus {
+      box-shadow: rgba(0,0,0,0.4) 0px 0px 10px 2px, rgba(0,0,0, 0.65) 0px 4px 6px -1px, rgba(0,0,0, 0.08) 0px 1px 0px inset;
+  }
+
+
+/*[>列表<]*/
+#inner-box {
+    margin: 5px;
+    border: 2px solid rgba(0,0,0,0);
+    border-radius: 12px;
+    background-color: rgba(255,255,255,0.1);
+}
+
+#entry {
+    border: 2px solid;
+    border-radius: 15px;
+    /*列表之间的间隔 */
+    margin: 3px;               
+    opacity: 2.7;
+    transition: all 0.25s ease;
+}
+
+/* 彩虹颜色循环（背景透明度提升到0.3） */
+#entry:nth-child(7n+1) { 
+    border-color: rgba(255, 50, 50, 0.6);    /* 红 */
+    background-color: rgba(255, 50, 50, 0.3);
+}
+#entry:nth-child(7n+2) { 
+    border-color: rgba(255, 165, 0, 0.6);   /* 橙 */
+    background-color: rgba(255, 165, 0, 0.3);
+}
+#entry:nth-child(7n+3) { 
+    border-color: rgba(255, 255, 80, 0.6);  /* 黄 */
+    background-color: rgba(255, 255, 80, 0.3);
+}
+#entry:nth-child(7n+4) { 
+    border-color: rgba(50, 255, 50, 0.6);   /* 绿 */
+    background-color: rgba(50, 255, 50, 0.3);
+}
+#entry:nth-child(7n+5) { 
+    border-color: rgba(50, 150, 255, 0.6);  /* 蓝 */
+    background-color: rgba(50, 150, 255, 0.3);
+}
+#entry:nth-child(7n+6) { 
+    border-color: rgba(100, 0, 200, 0.6);   /* 靛 */
+    background-color: rgba(100, 0, 200, 0.3);
+}
+#entry:nth-child(7n+7) { 
+    border-color: rgba(200, 100, 255, 0.6); /* 紫 */
+    background-color: rgba(200, 100, 255, 0.3);
+}
+
+
+/*背景*/
+#outer-box {
+    margin: 0px;
+    border: 3px solid rgba(0,0,0,0);
+    background-color: rgba(0,0,0,0);
+}
+
+/*列表边框*/
+#scroll {
+    margin: 5px;
+    border: 2px solid rgba(0,0,0,0);
+    background-color: rgba(0,0,0,0);
+}
+
+/*列表中的字体*/
+#text {
+    color: #e8f8f5;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5); /* 增强文字阴影 */
+    margin: 5px;
+    border: 0px solid black;
+}
+
+/*图标*/
+#entry image {
+    padding-right: 3px;
+    background-color: transparent;
+}
+
+/*[>列表中第二种颜色，与window中的底色叠加<]*/
+/**#entry:nth-child(even){*/
+    /*[>border: 1px solid rgba(15,21,70,0.8);<]*/
+    /*background-color: rgba(0,0,0,0.1);*/
+/*}*/
+
+/*选中的条目*/
+#entry:selected {
+    margin: 0px;
+    border-radius: 9px;
+    border: 1px solid white;
+    border-color: rgba(255,255,255,0.95) !important;
+    background-color: rgba(255,255,255,0.1) !important;
+    /*box-shadow: rgba(255,255,255,0.4) 0px 10px 10px 1px, rgba(255,255,255, 0.65) 0px 4px 6px 1px, rgba(255,255,255, 0.08) 0px 10px 10px 2px;*/
+    box-shadow: rgba(0,0,0,0.2) 0px 10px 20px 1px, rgba(0,0,0, 0.2) 0px 4px 16px 1px, rgba(0,0,0, 0.08) 0px 10px 10px 2px;
+}
+
+/*选中条目的字体设置*/
+#text:selected {
+    margin: 5px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    /*border: 3px solid yellow;*/
+    /*background-color: blue;*/
+}
+
+        /* 子菜单颜色继承（降低饱和度） */
+        #expander-box #entry:nth-child(7n+1) { border-left-color: rgba(255,100,100,0.4); }
+        #expander-box #entry:nth-child(7n+2) { border-left-color: rgba(255,180,80,0.4); }
+        #expander-box #entry:nth-child(7n+3) { border-left-color: rgba(255,255,120,0.4); }
+        #expander-box #entry:nth-child(7n+4) { border-left-color: rgba(80,255,80,0.4); }
+        #expander-box #entry:nth-child(7n+5) { border-left-color: rgba(80,160,255,0.4); }
+        #expander-box #entry:nth-child(7n+6) { border-left-color: rgba(120,50,200,0.4); }
+        #expander-box #entry:nth-child(7n+7) { border-left-color: rgba(210,130,255,0.4); }
+
+
+    /*子项目字体颜色*/
+    #entry.activatable #text {
+        color: #e0e0e0;
+        font-size: 20px;
+        font-weight: normal;
+        font-style: italic;
+    }
+
+    /*子项目的选中项*/
+    #entry.activatable:selected {
+        border: 1px dashed rgba(255,255,255,1);
+        background-color: rgba(255,255,255,0.3);
+    box-shadow: rgba(255,255,255,0.4) 0px 0px 10px 1px, rgba(255,255,255, 0.65) 0px 4px 6px 1px, rgba(255,255,255, 0.08) 0px 1px 0px 2px;
+    }
+
+    /*子项目选中项的字体颜色*/
+    #entry.activatable:selected #text {
+        font-size: 22px;
+        font-style: normal;
+        font-weight: bold;
+        color: white;
+        text-shadow: 0 1px 3px rgba(0,0,0,0.5); /* 增强文字阴影 */
+    }
+
+    /*子项目的>展开符号*/
+    #entry > * {
+        font-weight: bold;
+        color: white;
+    }
+
+    /*子条目的背景*/
+    #expander-box {
+        margin: 2px;
+        border-radius: 9px;
+        border: 1px solid white;
+        background-color: rgba(26,30,36,0.4);
+    }
+

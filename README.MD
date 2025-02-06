@@ -41,3 +41,10 @@ prompt=🐍²⁰²⁵拜年啦🧨🐍年大吉🐍来运转✨金🐍献瑞🌟
 
 ![](./HappyChineseNewYear/screenshot.png)
 
+## 4. 彩虹·Rainbow
+
+感谢 Deepseek！帮我写了这么多颜色。  
+当然微调还是得是活人。
+
+![](./rainbow/rainbow.png)
+
