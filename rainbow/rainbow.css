@@ -8,8 +8,9 @@
 window {
     margin: 0px;
     font-size: 20px;            /*v1.4.1,字体写在此处保证每次窗口都居中*/
-    border-radius: 5px;
+    border-radius: 7px;
     border: 2px solid white;
+    opacity: 0.95;
     /*background-color: rgba(0,0,0,0.3);*/
     background-color: rgba(255,255,255,0.7);
 }
@@ -44,7 +45,7 @@ window {
     border-radius: 15px;
     /*列表之间的间隔 */
     margin: 3px;               
-    opacity: 2.7;
+    opacity: 0.9;
     transition: all 0.25s ease;
 }
 
