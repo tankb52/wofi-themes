@@ -51,3 +51,9 @@ prompt=🐍²⁰²⁵拜年啦🧨🐍年大吉🐍来运转✨金🐍献瑞🌟
 Webp animation
 
 ![](./rainbow/rainbow.webp)
+
+## 5. 亚克力·Acrylic
+
+加了一点渐变效果。
+
+![](./Acrylic/Acrylic.png)
