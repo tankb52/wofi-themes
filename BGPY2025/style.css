@@ -25,6 +25,12 @@ window {
     color: rgb(255,255,96);
 }
 
+/*搜索框的图标颜色*/
+#input image {
+    border: none;
+    color: rgba(255,136,0,1);
+}
+
 /*聚集在搜索框时的特效*/
 #input:focus {
       box-shadow: 
@@ -136,7 +142,11 @@ window {
     }
 
     /*子项目的>展开符号*/
-    #entry > * {
+    #entry arrow {
+        font-weight: bold;
+        color: rgba(255,136,0,0.9);
+    }
+    #entry arrow:hover {
         font-weight: bold;
         color: #80ff80;
     }
